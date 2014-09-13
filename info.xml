@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <extension key="org.civicoop.paymentarrangement" type="module">
   <file>paymentarrangement</file>
+  <downloadUrl>https://github.com/CiviCooP/org.civicoop.paymentarrangement/archive/master.zip</downloadUrl>
   <name>Payment arrangement</name>
   <description>Add payment arrangement fields to contribution</description>
   <license>AGPL-3.0</license>
@@ -8,8 +9,9 @@
     <author>Jaap Jansma</author>
     <email>helpdesk@civicoop.org</email>
   </maintainer>
-  <releaseDate>2014-09-11</releaseDate>
-  <version>1.0</version>
+  <urls><url desc="Documentation">https://github.com/CiviCooP/org.civicoop.paymentarrangement</url></urls>
+  <releaseDate>2014-09-12</releaseDate>
+  <version>1.1</version>
   <develStage>alpha</develStage>
   <compatibility>
     <ver>4.4</ver>
