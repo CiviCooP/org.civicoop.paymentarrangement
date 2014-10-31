@@ -10,7 +10,7 @@ class CRM_Paymentarrangement_Upgrader extends CRM_Paymentarrangement_Upgrader_Ba
     $this->executeCustomDataFile('xml/contact_payment_arrangement.xml');
   }
 
-  public function upgrade_1001() {
+  public function upgrade_1002() {
     $this->executeCustomDataFile('xml/contact_payment_arrangement.xml');
     return TRUE;
   } 
