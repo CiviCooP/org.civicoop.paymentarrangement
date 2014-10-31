@@ -35,7 +35,7 @@
       <note_columns>60</note_columns>
       <note_rows>4</note_rows>
       <column_name>payment_arrangement</column_name>
-      <option_group_name>payment_arrangement_options</option_group_name>
+      <option_group_name>contact_payment_arrangement_options</option_group_name>
       <custom_group_name>contact_payment_arrangement</custom_group_name>
     </CustomField>
     <CustomField>
@@ -56,4 +56,36 @@
       <custom_group_name>contact_payment_arrangement</custom_group_name>
     </CustomField>
   </CustomFields>
+  <OptionGroups>
+    <OptionGroup>
+      <name>contact_payment_arrangement_options</name>
+      <title>Contact Payment arrangement options</title>
+      <is_reserved>1</is_reserved>
+      <is_active>1</is_active>
+    </OptionGroup>
+  </OptionGroups>
+  <OptionValues>
+    <OptionValue>
+      <label>No payment arrangement</label>
+      <value>0</value>
+      <name>No_payment_arrangement</name>
+      <is_default>0</is_default>
+      <weight>1</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>contact_payment_arrangement_options</option_group_name>
+    </OptionValue>
+    <OptionValue>
+      <label>Payment arrangement made</label>
+      <value>1</value>
+      <name>Payment_arrangement_made</name>
+      <is_default>0</is_default>
+      <weight>2</weight>
+      <is_optgroup>0</is_optgroup>
+      <is_reserved>0</is_reserved>
+      <is_active>1</is_active>
+      <option_group_name>contact_payment_arrangement_options</option_group_name>
+    </OptionValue>
+  </OptionValues>
 </CustomData>
