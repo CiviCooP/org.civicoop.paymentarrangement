@@ -1,0 +1,12 @@
+{
+  "name": "civicoop/org.civicoop.paymentarrangement",
+  "description": "Add payment arrangement fields to contribution",
+  "type": "civicrm-module",
+  "authors": [
+    {
+      "name": "Jaap Jansma",
+      "email": "helpdesk@civicoop.org"
+    }
+  ],
+  "license": "AGPL-3.0"
+}
