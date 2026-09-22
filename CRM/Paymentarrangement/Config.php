@@ -17,13 +17,13 @@ class CRM_Paymentarrangement_Config {
   private $contact_payment_arrangement_details_field;
   
   private function __construct() {
-    $this->payment_arrangement_group = civicrm_api3('CustomGroup', 'getsingle', array('name' => 'payment_arrangement'));
-    $this->payment_arrangement_field = civicrm_api3('CustomField', 'getsingle', array('name' => 'payment_arrangement', 'custom_group_id' => $this->payment_arrangement_group['id']));
-    $this->payment_arrangement_details_field = civicrm_api3('CustomField', 'getsingle', array('name' => 'payment_arrangement_details', 'custom_group_id' => $this->payment_arrangement_group['id']));
+    $this->payment_arrangement_group = civicrm_api3('CustomGroup', 'getsingle', ['name' => 'payment_arrangement']);
+    $this->payment_arrangement_field = civicrm_api3('CustomField', 'getsingle', ['name' => 'payment_arrangement', 'custom_group_id' => $this->payment_arrangement_group['id']]);
+    $this->payment_arrangement_details_field = civicrm_api3('CustomField', 'getsingle', ['name' => 'payment_arrangement_details', 'custom_group_id' => $this->payment_arrangement_group['id']]);
     
-    $this->contact_payment_arrangement_group = civicrm_api3('CustomGroup', 'getsingle', array('name' => 'contact_payment_arrangement'));
-    $this->contact_payment_arrangement_field = civicrm_api3('CustomField', 'getsingle', array('name' => 'payment_arrangement', 'custom_group_id' => $this->contact_payment_arrangement_group['id']));
-    $this->contact_payment_arrangement_details_field = civicrm_api3('CustomField', 'getsingle', array('name' => 'payment_arrangement_details', 'custom_group_id' => $this->contact_payment_arrangement_group['id']));
+    $this->contact_payment_arrangement_group = civicrm_api3('CustomGroup', 'getsingle', ['name' => 'contact_payment_arrangement']);
+    $this->contact_payment_arrangement_field = civicrm_api3('CustomField', 'getsingle', ['name' => 'payment_arrangement', 'custom_group_id' => $this->contact_payment_arrangement_group['id']]);
+    $this->contact_payment_arrangement_details_field = civicrm_api3('CustomField', 'getsingle', ['name' => 'payment_arrangement_details', 'custom_group_id' => $this->contact_payment_arrangement_group['id']]);
   }
   
   /**
